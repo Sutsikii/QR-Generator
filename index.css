@@ -75,3 +75,12 @@ header h1{
     pointer-events: auto;
     transition: opacity 0.5s 0.05s ease;
 }
+
+
+.download-btn {
+    display: none;
+}
+
+.download-btn.active{
+    display: inline-block;
+}

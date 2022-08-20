@@ -34,7 +34,7 @@ function fetchFile(url)
         let tempUrl = URL.createObjectURL(file);
         let aTag = document.createElement("a");
         aTag.href = tempUrl;
-        aTag.download = `QR-CODE-${qrValue}`;
+        aTag.download = `QR-CODE`;
         document.body.appendChild(aTag);
         aTag.click();
         aTag.remove();

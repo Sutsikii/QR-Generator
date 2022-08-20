@@ -30,7 +30,6 @@ function fetchFile(url)
 {
 
     fetch(url).then(res => res.blob()).then(file => {
-        let qrValue = qrInput.value;
         let tempUrl = URL.createObjectURL(file);
         let aTag = document.createElement("a");
         aTag.href = tempUrl;
